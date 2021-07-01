@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,15 +11,78 @@
 		8A0FFF99266FA44C002B8536 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FFF98266FA44C002B8536 /* ContentView.swift */; };
 		8A0FFF9B266FA44E002B8536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0FFF9A266FA44E002B8536 /* Assets.xcassets */; };
 		8A0FFF9E266FA44F002B8536 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0FFF9D266FA44F002B8536 /* Preview Assets.xcassets */; };
+		8A0FFFA6266FA493002B8536 /* Joystick2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FFFA5266FA493002B8536 /* Joystick2.swift */; };
+		8A0FFFA8266FA4AD002B8536 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FFFA7266FA4AD002B8536 /* Controller.swift */; };
+		8A0FFFAA266FA4C9002B8536 /* gameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FFFA9266FA4C9002B8536 /* gameView.swift */; };
+		8A0FFFAC266FA4D8002B8536 /* class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FFFAB266FA4D8002B8536 /* class.swift */; };
+		8A0FFFB0266FA571002B8536 /* GateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FFFAF266FA571002B8536 /* GateView.swift */; };
+		8A0FFFC3266FA9E2002B8536 /* cloudData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FFFC2266FA9E2002B8536 /* cloudData.swift */; };
+		8A0FFFCA266FACBA002B8536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FFFC9266FACBA002B8536 /* AppDelegate.swift */; };
+		8A0FFFCC266FACEF002B8536 /* settingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FFFCB266FACEF002B8536 /* settingView.swift */; };
+		8A0FFFCE266FAD06002B8536 /* settingshap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FFFCD266FAD06002B8536 /* settingshap.swift */; };
+		8A0FFFD0266FAD3F002B8536 /* LobbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FFFCF266FAD3F002B8536 /* LobbyView.swift */; };
+		8A0FFFD4266FC478002B8536 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FFFD3266FC478002B8536 /* Room.swift */; };
+		8A134F54268788B70006EEBE /* WaitingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A134F53268788B70006EEBE /* WaitingRoomView.swift */; };
+		8A134F5626886C3C0006EEBE /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A134F5526886C3C0006EEBE /* ImageView.swift */; };
+		8A1C04CD26805CB10060AFCB /* bomb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1C04CC26805CB10060AFCB /* bomb.mp3 */; };
+		8A1C04CF2681CCE20060AFCB /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A1C04CE2681CCE20060AFCB /* bgm.mp3 */; };
+		8A70951C26765BBF0074311E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A70951B26765BBF0074311E /* Game.swift */; };
+		8A70951E267670E20074311E /* SpecialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A70951D267670E20074311E /* SpecialButton.swift */; };
+		8A70952026771F3A0074311E /* UserButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A70951F26771F3A0074311E /* UserButton.swift */; };
+		8A7095232679AD800074311E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8A7095222679AD800074311E /* FirebaseFirestore */; };
+		8A7095252679AD800074311E /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8A7095242679AD800074311E /* FirebaseDatabase */; };
+		8A7095272679AD800074311E /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 8A7095262679AD800074311E /* FirebaseFirestoreSwift-Beta */; };
+		8A7095292679AD800074311E /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 8A7095282679AD800074311E /* FirebaseAnalyticsSwift-Beta */; };
+		8A70952B2679AD800074311E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8A70952A2679AD800074311E /* FirebaseAnalytics */; };
+		8A70952D2679AD800074311E /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 8A70952C2679AD800074311E /* FirebaseStorageSwift-Beta */; };
+		8A70952F2679AD800074311E /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 8A70952E2679AD800074311E /* FirebaseDatabaseSwift-Beta */; };
+		8A7095312679AD800074311E /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8A7095302679AD800074311E /* FirebaseCrashlytics */; };
+		8A7095332679AD800074311E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8A7095322679AD800074311E /* FirebaseAuth */; };
+		8A7095352679AD800074311E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8A7095342679AD800074311E /* FirebaseStorage */; };
+		8A7095382679AE580074311E /* SwiftUIPullToRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = 8A7095372679AE580074311E /* SwiftUIPullToRefresh */; };
+		8A8AD65E268DAE27007688A3 /* PlayersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8AD65D268DAE27007688A3 /* PlayersData.swift */; };
+		8A8AD663268DCE32007688A3 /* CrashTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8AD662268DCE32007688A3 /* CrashTextView.swift */; };
+		8A8AD665268DFCB6007688A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A8AD664268DFCB6007688A3 /* GoogleService-Info.plist */; };
+		8AD2AFDF26749544008628ED /* settingfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD2AFDE26749544008628ED /* settingfaceView.swift */; };
+		8AD2AFE32674F1E9008628ED /* GotoroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD2AFE22674F1E9008628ED /* GotoroomView.swift */; };
+		8AD2AFE826750AC1008628ED /* createroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD2AFE726750AC1008628ED /* createroomView.swift */; };
+		AE998C7CE1070B6C0CD9A4EE /* Pods_GAME_4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D348FA345E01DA9F322EAE2 /* Pods_GAME_4.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B9D22EE2846BA1E28300D61 /* Pods-GAME-4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAME-4.release.xcconfig"; path = "Target Support Files/Pods-GAME-4/Pods-GAME-4.release.xcconfig"; sourceTree = "<group>"; };
+		4D348FA345E01DA9F322EAE2 /* Pods_GAME_4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAME_4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0FFF93266FA44C002B8536 /* GAME-4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GAME-4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0FFF96266FA44C002B8536 /* GAME_4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAME_4App.swift; sourceTree = "<group>"; };
 		8A0FFF98266FA44C002B8536 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8A0FFF9A266FA44E002B8536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A0FFF9D266FA44F002B8536 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A0FFF9F266FA44F002B8536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A0FFFA5266FA493002B8536 /* Joystick2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joystick2.swift; sourceTree = "<group>"; };
+		8A0FFFA7266FA4AD002B8536 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		8A0FFFA9266FA4C9002B8536 /* gameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameView.swift; sourceTree = "<group>"; };
+		8A0FFFAB266FA4D8002B8536 /* class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = class.swift; sourceTree = "<group>"; };
+		8A0FFFAF266FA571002B8536 /* GateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateView.swift; sourceTree = "<group>"; };
+		8A0FFFC2266FA9E2002B8536 /* cloudData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cloudData.swift; sourceTree = "<group>"; };
+		8A0FFFC9266FACBA002B8536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A0FFFCB266FACEF002B8536 /* settingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingView.swift; sourceTree = "<group>"; };
+		8A0FFFCD266FAD06002B8536 /* settingshap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingshap.swift; sourceTree = "<group>"; };
+		8A0FFFCF266FAD3F002B8536 /* LobbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyView.swift; sourceTree = "<group>"; };
+		8A0FFFD3266FC478002B8536 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		8A134F53268788B70006EEBE /* WaitingRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomView.swift; sourceTree = "<group>"; };
+		8A134F5526886C3C0006EEBE /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		8A1C04CC26805CB10060AFCB /* bomb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bomb.mp3; sourceTree = "<group>"; };
+		8A1C04CE2681CCE20060AFCB /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
+		8A70951B26765BBF0074311E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Game.swift; path = "/Users/wutingkai/Desktop/Code/GAME-4/GAME-4/LoginView/Game.swift"; sourceTree = "<absolute>"; };
+		8A70951D267670E20074311E /* SpecialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialButton.swift; sourceTree = "<group>"; };
+		8A70951F26771F3A0074311E /* UserButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserButton.swift; sourceTree = "<group>"; };
+		8A8AD65D268DAE27007688A3 /* PlayersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayersData.swift; path = "/Users/wutingkai/Desktop/Code/GAME-4/GAME-4/gameView/PlayersData.swift"; sourceTree = "<absolute>"; };
+		8A8AD662268DCE32007688A3 /* CrashTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashTextView.swift; sourceTree = "<group>"; };
+		8A8AD664268DFCB6007688A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8AD2AFDE26749544008628ED /* settingfaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingfaceView.swift; sourceTree = "<group>"; };
+		8AD2AFE22674F1E9008628ED /* GotoroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotoroomView.swift; sourceTree = "<group>"; };
+		8AD2AFE726750AC1008628ED /* createroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createroomView.swift; sourceTree = "<group>"; };
+		D8709C5A6309A92D6F7B9412 /* Pods-GAME-4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAME-4.debug.xcconfig"; path = "Target Support Files/Pods-GAME-4/Pods-GAME-4.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +90,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A70952B2679AD800074311E /* FirebaseAnalytics in Frameworks */,
+				8A7095292679AD800074311E /* FirebaseAnalyticsSwift-Beta in Frameworks */,
+				8A7095382679AE580074311E /* SwiftUIPullToRefresh in Frameworks */,
+				AE998C7CE1070B6C0CD9A4EE /* Pods_GAME_4.framework in Frameworks */,
+				8A7095272679AD800074311E /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				8A7095352679AD800074311E /* FirebaseStorage in Frameworks */,
+				8A70952D2679AD800074311E /* FirebaseStorageSwift-Beta in Frameworks */,
+				8A70952F2679AD800074311E /* FirebaseDatabaseSwift-Beta in Frameworks */,
+				8A7095332679AD800074311E /* FirebaseAuth in Frameworks */,
+				8A7095312679AD800074311E /* FirebaseCrashlytics in Frameworks */,
+				8A7095252679AD800074311E /* FirebaseDatabase in Frameworks */,
+				8A7095232679AD800074311E /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3187C32B63206E0827DAE09E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D348FA345E01DA9F322EAE2 /* Pods_GAME_4.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A0FFF8A266FA44B002B8536 = {
 			isa = PBXGroup;
 			children = (
 				8A0FFF95266FA44C002B8536 /* GAME-4 */,
 				8A0FFF94266FA44C002B8536 /* Products */,
+				D5E14AE3534A0699C2DEBCCF /* Pods */,
+				3187C32B63206E0827DAE09E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +137,12 @@
 		8A0FFF95266FA44C002B8536 /* GAME-4 */ = {
 			isa = PBXGroup;
 			children = (
-				8A0FFF96266FA44C002B8536 /* GAME_4App.swift */,
-				8A0FFF98266FA44C002B8536 /* ContentView.swift */,
+				8A0FFFD1266FAD84002B8536 /* JoyStick */,
+				8A134F502685FD5D0006EEBE /* gamewaiting  */,
+				8AD15740266FE66600296DC3 /* gameView */,
+				8A0FFFC6266FAB1F002B8536 /* LoginView */,
+				8AD2AFE02674E29D008628ED /* data */,
+				8AD2AFE12674E2B4008628ED /* others */,
 				8A0FFF9A266FA44E002B8536 /* Assets.xcassets */,
 				8A0FFF9F266FA44F002B8536 /* Info.plist */,
 				8A0FFF9C266FA44F002B8536 /* Preview Content */,
@@ -69,6 +158,91 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8A0FFFC6266FAB1F002B8536 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				8A0FFFAF266FA571002B8536 /* GateView.swift */,
+				8A70951B26765BBF0074311E /* Game.swift */,
+				8A0FFFCB266FACEF002B8536 /* settingView.swift */,
+				8AD2AFDE26749544008628ED /* settingfaceView.swift */,
+				8A0FFFCD266FAD06002B8536 /* settingshap.swift */,
+				8A0FFFD2266FBDD9002B8536 /* Lobby */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		8A0FFFD1266FAD84002B8536 /* JoyStick */ = {
+			isa = PBXGroup;
+			children = (
+				8A0FFFA5266FA493002B8536 /* Joystick2.swift */,
+			);
+			path = JoyStick;
+			sourceTree = "<group>";
+		};
+		8A0FFFD2266FBDD9002B8536 /* Lobby */ = {
+			isa = PBXGroup;
+			children = (
+				8A0FFFCF266FAD3F002B8536 /* LobbyView.swift */,
+			);
+			path = Lobby;
+			sourceTree = "<group>";
+		};
+		8A134F502685FD5D0006EEBE /* gamewaiting  */ = {
+			isa = PBXGroup;
+			children = (
+				8A134F53268788B70006EEBE /* WaitingRoomView.swift */,
+				8AD2AFE22674F1E9008628ED /* GotoroomView.swift */,
+			);
+			path = "gamewaiting ";
+			sourceTree = "<group>";
+		};
+		8AD15740266FE66600296DC3 /* gameView */ = {
+			isa = PBXGroup;
+			children = (
+				8A0FFFA9266FA4C9002B8536 /* gameView.swift */,
+				8A8AD65D268DAE27007688A3 /* PlayersData.swift */,
+				8A0FFFA7266FA4AD002B8536 /* Controller.swift */,
+				8A1C04CE2681CCE20060AFCB /* bgm.mp3 */,
+				8A1C04CC26805CB10060AFCB /* bomb.mp3 */,
+			);
+			path = gameView;
+			sourceTree = "<group>";
+		};
+		8AD2AFE02674E29D008628ED /* data */ = {
+			isa = PBXGroup;
+			children = (
+				8A0FFFC9266FACBA002B8536 /* AppDelegate.swift */,
+				8A0FFFD3266FC478002B8536 /* Room.swift */,
+				8A0FFFAB266FA4D8002B8536 /* class.swift */,
+				8A0FFFC2266FA9E2002B8536 /* cloudData.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		8AD2AFE12674E2B4008628ED /* others */ = {
+			isa = PBXGroup;
+			children = (
+				8A134F5526886C3C0006EEBE /* ImageView.swift */,
+				8A8AD664268DFCB6007688A3 /* GoogleService-Info.plist */,
+				8A8AD662268DCE32007688A3 /* CrashTextView.swift */,
+				8A70951D267670E20074311E /* SpecialButton.swift */,
+				8AD2AFE726750AC1008628ED /* createroomView.swift */,
+				8A70951F26771F3A0074311E /* UserButton.swift */,
+				8A0FFF98266FA44C002B8536 /* ContentView.swift */,
+				8A0FFF96266FA44C002B8536 /* GAME_4App.swift */,
+			);
+			path = others;
+			sourceTree = "<group>";
+		};
+		D5E14AE3534A0699C2DEBCCF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8709C5A6309A92D6F7B9412 /* Pods-GAME-4.debug.xcconfig */,
+				4B9D22EE2846BA1E28300D61 /* Pods-GAME-4.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,15 +250,31 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A0FFFA2266FA44F002B8536 /* Build configuration list for PBXNativeTarget "GAME-4" */;
 			buildPhases = (
+				481C2E9AC1FDC2BAD807D1E6 /* [CP] Check Pods Manifest.lock */,
 				8A0FFF8F266FA44C002B8536 /* Sources */,
 				8A0FFF90266FA44C002B8536 /* Frameworks */,
 				8A0FFF91266FA44C002B8536 /* Resources */,
+				BBE13A70A331341A864BA661 /* [CP] Embed Pods Frameworks */,
+				8A8AD661268DCDA5007688A3 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "GAME-4";
+			packageProductDependencies = (
+				8A7095222679AD800074311E /* FirebaseFirestore */,
+				8A7095242679AD800074311E /* FirebaseDatabase */,
+				8A7095262679AD800074311E /* FirebaseFirestoreSwift-Beta */,
+				8A7095282679AD800074311E /* FirebaseAnalyticsSwift-Beta */,
+				8A70952A2679AD800074311E /* FirebaseAnalytics */,
+				8A70952C2679AD800074311E /* FirebaseStorageSwift-Beta */,
+				8A70952E2679AD800074311E /* FirebaseDatabaseSwift-Beta */,
+				8A7095302679AD800074311E /* FirebaseCrashlytics */,
+				8A7095322679AD800074311E /* FirebaseAuth */,
+				8A7095342679AD800074311E /* FirebaseStorage */,
+				8A7095372679AE580074311E /* SwiftUIPullToRefresh */,
+			);
 			productName = "GAME-4";
 			productReference = 8A0FFF93266FA44C002B8536 /* GAME-4.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +302,10 @@
 				Base,
 			);
 			mainGroup = 8A0FFF8A266FA44B002B8536;
+			packageReferences = (
+				8A7095212679AD800074311E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8A7095362679AE580074311E /* XCRemoteSwiftPackageReference "SwiftUIPullToRefresh" */,
+			);
 			productRefGroup = 8A0FFF94266FA44C002B8536 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,18 +322,103 @@
 			files = (
 				8A0FFF9E266FA44F002B8536 /* Preview Assets.xcassets in Resources */,
 				8A0FFF9B266FA44E002B8536 /* Assets.xcassets in Resources */,
+				8A1C04CD26805CB10060AFCB /* bomb.mp3 in Resources */,
+				8A1C04CF2681CCE20060AFCB /* bgm.mp3 in Resources */,
+				8A8AD665268DFCB6007688A3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		481C2E9AC1FDC2BAD807D1E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GAME-4-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A8AD661268DCDA5007688A3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%Build/*}SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+		BBE13A70A331341A864BA661 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GAME-4/Pods-GAME-4-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GAME-4/Pods-GAME-4-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GAME-4/Pods-GAME-4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A0FFF8F266FA44C002B8536 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A0FFFB0266FA571002B8536 /* GateView.swift in Sources */,
+				8A0FFFCC266FACEF002B8536 /* settingView.swift in Sources */,
+				8AD2AFE32674F1E9008628ED /* GotoroomView.swift in Sources */,
+				8A0FFFAC266FA4D8002B8536 /* class.swift in Sources */,
+				8A134F5626886C3C0006EEBE /* ImageView.swift in Sources */,
 				8A0FFF99266FA44C002B8536 /* ContentView.swift in Sources */,
+				8A0FFFCA266FACBA002B8536 /* AppDelegate.swift in Sources */,
+				8A70952026771F3A0074311E /* UserButton.swift in Sources */,
+				8A8AD663268DCE32007688A3 /* CrashTextView.swift in Sources */,
+				8A0FFFD0266FAD3F002B8536 /* LobbyView.swift in Sources */,
+				8A0FFFD4266FC478002B8536 /* Room.swift in Sources */,
+				8A0FFFCE266FAD06002B8536 /* settingshap.swift in Sources */,
+				8AD2AFDF26749544008628ED /* settingfaceView.swift in Sources */,
+				8A0FFFC3266FA9E2002B8536 /* cloudData.swift in Sources */,
+				8A134F54268788B70006EEBE /* WaitingRoomView.swift in Sources */,
+				8AD2AFE826750AC1008628ED /* createroomView.swift in Sources */,
 				8A0FFF97266FA44C002B8536 /* GAME_4App.swift in Sources */,
+				8A70951C26765BBF0074311E /* Game.swift in Sources */,
+				8A0FFFA6266FA493002B8536 /* Joystick2.swift in Sources */,
+				8A70951E267670E20074311E /* SpecialButton.swift in Sources */,
+				8A0FFFA8266FA4AD002B8536 /* Controller.swift in Sources */,
+				8A8AD65E268DAE27007688A3 /* PlayersData.swift in Sources */,
+				8A0FFFAA266FA4C9002B8536 /* gameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,10 +543,12 @@
 		};
 		8A0FFFA3266FA44F002B8536 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8709C5A6309A92D6F7B9412 /* Pods-GAME-4.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"GAME-4/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "GAME-4/Info.plist";
@@ -285,6 +566,7 @@
 		};
 		8A0FFFA4266FA44F002B8536 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B9D22EE2846BA1E28300D61 /* Pods-GAME-4.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +608,83 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A7095212679AD800074311E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.1;
+			};
+		};
+		8A7095362679AE580074311E /* XCRemoteSwiftPackageReference "SwiftUIPullToRefresh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maguowei/SwiftUIPullToRefresh";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A7095222679AD800074311E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A7095212679AD800074311E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		8A7095242679AD800074311E /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A7095212679AD800074311E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		8A7095262679AD800074311E /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A7095212679AD800074311E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		8A7095282679AD800074311E /* FirebaseAnalyticsSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A7095212679AD800074311E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAnalyticsSwift-Beta";
+		};
+		8A70952A2679AD800074311E /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A7095212679AD800074311E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		8A70952C2679AD800074311E /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A7095212679AD800074311E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+		8A70952E2679AD800074311E /* FirebaseDatabaseSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A7095212679AD800074311E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseDatabaseSwift-Beta";
+		};
+		8A7095302679AD800074311E /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A7095212679AD800074311E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		8A7095322679AD800074311E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A7095212679AD800074311E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8A7095342679AD800074311E /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A7095212679AD800074311E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		8A7095372679AE580074311E /* SwiftUIPullToRefresh */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A7095362679AE580074311E /* XCRemoteSwiftPackageReference "SwiftUIPullToRefresh" */;
+			productName = SwiftUIPullToRefresh;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8A0FFF8B266FA44B002B8536 /* Project object */;
 }
